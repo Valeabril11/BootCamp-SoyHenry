@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=UTF-8>
+  <title>Demo AJAX</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id='respuesta'>
+    <button class='all'>Todos los pedidos!</button>
+    <button class= 'pedidos'>consultar pedido:)</button>
+    <input name='index' type='text'/>
+    <button class="'pedidos">consultar el ultimo pedido:D</button>
+  </div>
+<script>
+$('.pedidos').click(function(){
+  $.get('https://jsonplaceholder.typicode.com/photos', /*necesito una respuesta -->*/ function(data){// le tengo que indicar adonde ir a hacer el get
+  data.forEach(e => $(`<div id="${e.id}">
+    <p> EL TITULO ES: ${e.title}</p>
+    <p>EL BODY ES: ${e.body}</p></div>`).appendTo('body'));
+  })})
+
+</script>
+
+
+  <script type="text/javascript">
+    var index = 1;
+    $('.boton').click(function () {
+      // GET AJAX
+      $.get("https://jsonplaceholder.typicode.com/photos/" + index, function (data) {
+        // vanilla javascript
+        var img = document.createElement('img');
+        img.src = dataAca.url;
+        var title = document.createElement('h3');
+        title.textContent = dataAca.title;
+        $('#respuesta').append(img);
+        $('#respuesta').append(title);
+        index++;
+      });
+
+    });
+    // Ahora quiero hacer algo 
+  </script>
+</body>
+
+</html>

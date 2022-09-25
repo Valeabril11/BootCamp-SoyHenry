@@ -1,0 +1,25 @@
+// Mixins acá
+.flex(@directio, @justufy, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justufy;
+    align-items: @align;
+}
+.roundImg(@radius){
+    border-radius: 20px;
+.datosA(@flex:colum){
+    colum: row;
+}
+}
+.buttomR(@par1, @par2){
+    background-color: @par1;
+    border-radius: @par2;
+    color: aliceblue;
+    border-color: rgb(4, 7, 7);
+    width: min-content;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(2, 160, 107);
+    }
+}

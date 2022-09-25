@@ -1,0 +1,23 @@
+.dir{
+    width: auto;
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.search{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius:50px;
+}
+.btn{
+    color: grey;
+    background-color: black;
+   
+}
+.btn:hover{
+    background-color: grey;
+    color: black
+}

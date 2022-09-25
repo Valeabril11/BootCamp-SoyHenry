@@ -1,0 +1,7 @@
+body {
+  background-color: fuchsia;
+}
+
+p {
+  text-decoration: underline;
+}

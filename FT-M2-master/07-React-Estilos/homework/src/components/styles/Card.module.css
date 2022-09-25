@@ -1,0 +1,34 @@
+.btn{
+    background-color: rgb(238, 0, 255);
+    width: auto;
+    border-radius: 50px;
+    border-color: rgb(0, 0, 0);
+    margin-left: 80%;
+    margin-top: 2px;
+    color: aliceblue;
+}
+.btn:hover{
+background-color: rgba(154, 255, 111, 0.701);
+color: black;
+}
+.temp{
+    color: black;
+    font-family: 'Gill Sans';
+    width: auto;
+    align-items: baseline;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.img{
+    border-color: black;
+}
+
+.card{
+border-radius: 20px;
+border: 2px solid black;
+width: 250px;
+margin: 50px;
+background-color: rgba(128, 128, 128, 0.481);
+} 
+.card:hover{
+    background-color: rgba(127, 255, 212, 0.423);
+}
